@@ -9,9 +9,9 @@ namespace Graidot.Utils.Finxplore.Extensions
             switch (type)
             {
                 case InstituteType.CommercialBank:
-                    return "https://raw.githubusercontent.com/Chidiebube-Onah/BanksInNigeria/main/BanksInNigeria.min.json";
+                    return "https://raw.githubusercontent.com/Allenkeys/NigeriaFinancialInstitutes/main/Institutes/Banks.min.json";
                 case InstituteType.MicroFinanceBank:
-                    return "Microfinance-Bank";
+                    return "https://raw.githubusercontent.com/Allenkeys/NigeriaFinancialInstitutes/main/Institutes/Microfinance.min.json";
                 case InstituteType.TrustFund:
                     return "https://raw.githubusercontent.com/Allenkeys/NigeriaFinancialInstitutes/main/Institutes/Trustfunds.min.json";
                 default:
