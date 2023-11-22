@@ -2,7 +2,7 @@
 
 namespace Graidot.Utils.Finxplore
 {
-    public class Class1
+    public static class Finxplore
     {
 
     }
