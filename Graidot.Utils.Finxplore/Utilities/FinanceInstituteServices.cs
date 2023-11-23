@@ -55,6 +55,14 @@ namespace Graidot.Utils.Finxplore.Utilities
                 {
                     return Enumerable.Empty<InstituteResponse>();
                 }
+                catch(JsonException e)
+                {
+                    return Enumerable.Empty<InstituteResponse>();
+                }
+                catch 
+                {
+                    return Enumerable.Empty<InstituteResponse>();
+                }
             }
         }
     }

@@ -12,8 +12,8 @@ namespace Graidot.Utils.Finxplore.Extensions
                     return "https://raw.githubusercontent.com/Allenkeys/NigeriaFinancialInstitutes/main/Institutes/Banks.min.json";
                 case InstituteType.MicroFinanceBank:
                     return "https://raw.githubusercontent.com/Allenkeys/NigeriaFinancialInstitutes/main/Institutes/Microfinance.min.json";
-                case InstituteType.TrustFund:
-                    return "https://raw.githubusercontent.com/Allenkeys/NigeriaFinancialInstitutes/main/Institutes/Trustfunds.min.json";
+                case InstituteType.PensionFund:
+                    return "https://raw.githubusercontent.com/Allenkeys/NigeriaFinancialInstitutes/main/Institutes/Pensionfunds.min.json";
                 default:
                     return "";
             }

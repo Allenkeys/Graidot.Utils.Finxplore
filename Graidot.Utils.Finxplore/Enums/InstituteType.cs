@@ -4,7 +4,7 @@
     {
         CommercialBank = 1,
         MicroFinanceBank,
-        TrustFund,
+        PensionFund,
         MerchantBank
     }
 }
