@@ -1,4 +1,5 @@
-﻿using Graidot.Utils.Finxplore.Enums;
+﻿using System;
+using Graidot.Utils.Finxplore.Enums;
 using Graidot.Utils.Finxplore.Extensions;
 using Graidot.Utils.Finxplore.Models;
 using System.Linq;
@@ -11,15 +12,13 @@ namespace Graidot.Utils.Finxplore.Utilities
 {
     public class FinanceInstituteServices
     {
-        private readonly HttpClient _httpClient;
-
-        public async Task<IEnumerable<InstituteResponse>> GetInstitutes(InstituteType type)
+        internal async Task<IEnumerable<InstituteResponse>> GetInstitutesAsync(InstituteType type)
         {
             return await GetObject(type.ToStringValue());
            
         }
 
-        public async Task<InstituteResponse> GetInstitute(InstituteType type, int instituteId)
+        internal async Task<InstituteResponse> GetInstituteAsync(InstituteType type, int instituteId)
         {
             return (await GetObject(type.ToStringValue())).SingleOrDefault(x => x.Id == instituteId);
         }
@@ -33,6 +32,7 @@ namespace Graidot.Utils.Finxplore.Utilities
             {
                 try
                 {
+                    client.BaseAddress = new Uri("https://raw.githubusercontent.com/Allenkeys/NigeriaFinancialInstitutes/main/Institutes/");
                     HttpResponseMessage response = await client.GetAsync(fileName);
                     if (!response.IsSuccessStatusCode)
                     {
@@ -44,8 +44,6 @@ namespace Graidot.Utils.Finxplore.Utilities
                         AllowTrailingCommas = true,
                         IncludeFields = true,
                         PropertyNameCaseInsensitive = true,
-                        WriteIndented = true,
-                        PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
                     };
 
                     return JsonSerializer.Deserialize<IEnumerable<InstituteResponse>>(await response.Content.ReadAsStringAsync(), options);
