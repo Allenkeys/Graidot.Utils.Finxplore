@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Graidot.Utils.Finxplore.Models
+﻿namespace NigeriaFinance.Models
 {
     public sealed class InstituteResponse
     {
@@ -10,6 +6,6 @@ namespace Graidot.Utils.Finxplore.Models
         public string Name { get; set; }
         public string Institution { get; set; }
         public string Registered { get; set; }
-        public string Licensed { get; set; } 
+        public string Licensed { get; set; }
     }
 }

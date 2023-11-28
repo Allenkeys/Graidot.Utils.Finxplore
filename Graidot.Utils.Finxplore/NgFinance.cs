@@ -1,16 +1,15 @@
-﻿using Graidot.Utils.Finxplore.Enums;
-using Graidot.Utils.Finxplore.Models;
-using Graidot.Utils.Finxplore.Utilities;
-using System;
+﻿using NigeriaFinance.Enums;
+using NigeriaFinance.Models;
+using NigeriaFinance.Utilities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Graidot.Utils.Finxplore
 {
-    public static class Finxplore
+    public static class NgFinance
     {
         private static readonly FinanceInstituteServices _service;
-        static Finxplore()
+        static NgFinance()
         {
             _service = new FinanceInstituteServices();
         }
@@ -18,7 +17,7 @@ namespace Graidot.Utils.Finxplore
         {
             return await _service.GetInstituteAsync(typeId, instituteId);
         }
-        
+
         public static async Task<IEnumerable<InstituteResponse>> GetInstitutesAsync(InstituteType typeId)
         {
             return await _service.GetInstitutesAsync(typeId);

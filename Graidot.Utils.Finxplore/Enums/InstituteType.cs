@@ -1,4 +1,4 @@
-﻿namespace Graidot.Utils.Finxplore.Enums
+﻿namespace NigeriaFinance.Enums
 {
     public enum InstituteType
     {

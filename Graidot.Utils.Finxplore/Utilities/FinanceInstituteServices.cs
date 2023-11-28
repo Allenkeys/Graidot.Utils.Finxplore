@@ -1,21 +1,21 @@
-﻿using System;
-using Graidot.Utils.Finxplore.Enums;
-using Graidot.Utils.Finxplore.Extensions;
-using Graidot.Utils.Finxplore.Models;
+﻿using NigeriaFinance.Enums;
+using NigeriaFinance.Extensions;
+using NigeriaFinance.Models;
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
-using System.Threading.Tasks;
 using System.Text.Json;
-using System.Collections.Generic;
+using System.Threading.Tasks;
 
-namespace Graidot.Utils.Finxplore.Utilities
+namespace NigeriaFinance.Utilities
 {
     public class FinanceInstituteServices
     {
         internal async Task<IEnumerable<InstituteResponse>> GetInstitutesAsync(InstituteType type)
         {
             return await GetObject(type.ToStringValue());
-           
+
         }
 
         internal async Task<InstituteResponse> GetInstituteAsync(InstituteType type, int instituteId)
@@ -25,7 +25,7 @@ namespace Graidot.Utils.Finxplore.Utilities
 
         private async Task<IEnumerable<InstituteResponse>> GetObject(string fileName)
         {
-            if(string.IsNullOrWhiteSpace(fileName))
+            if (string.IsNullOrWhiteSpace(fileName))
                 return Enumerable.Empty<InstituteResponse>();
 
             using (HttpClient client = new HttpClient())
@@ -53,11 +53,11 @@ namespace Graidot.Utils.Finxplore.Utilities
                 {
                     return Enumerable.Empty<InstituteResponse>();
                 }
-                catch(JsonException e)
+                catch (JsonException e)
                 {
                     return Enumerable.Empty<InstituteResponse>();
                 }
-                catch 
+                catch
                 {
                     return Enumerable.Empty<InstituteResponse>();
                 }

@@ -1,6 +1,6 @@
-﻿using Graidot.Utils.Finxplore.Enums;
+﻿using NigeriaFinance.Enums;
 
-namespace Graidot.Utils.Finxplore.Extensions
+namespace NigeriaFinance.Extensions
 {
     public static class InstituteTypeExtension
     {
