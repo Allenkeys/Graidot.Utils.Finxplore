@@ -4,7 +4,7 @@ using NigeriaFinance.Utilities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Graidot.Utils.Finxplore
+namespace NigeriaFinance
 {
     public static class NgFinance
     {
