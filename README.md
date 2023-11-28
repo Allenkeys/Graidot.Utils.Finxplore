@@ -16,7 +16,7 @@
 
   - To install our package using the .NET CLI: 
   ```C#
-  dotnet add package NigeriaFinance -version 1.0.0
+  dotnet add package NigeriaFinance --version 1.0.0
   ```
   - Installation using Visual Studio
     - Right-click on project dependencies
@@ -26,7 +26,7 @@
 
   - Installation using .NET Package Manager Console
   ```C#
-    PM> Install-Package NigeriaFinance -version 1.0.0
+    PM> Install-Package NigeriaFinance -Version 1.0.0
   ```
   - Finally, import into file
   ```C#
