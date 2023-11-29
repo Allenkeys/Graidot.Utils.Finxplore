@@ -1,6 +1,7 @@
 # NigeriaFinance
 > NuGet package tailored for fetching banks and pension fund data, prioritizing secure externalization and data access. Emphasizing best practices for app development, ensuring streamlined retrieval and usage of non-sensitive financial data.
 
+![Banner](https://raw.githubusercontent.com/Allenkeys/NigeriaFinance/main/NigeriaFinance/Assets/Banner.png)
 
 ## Built With
 
