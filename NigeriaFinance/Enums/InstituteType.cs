@@ -2,9 +2,7 @@
 {
     public enum InstituteType
     {
-        CommercialBank = 1,
-        MicroFinanceBank,
+        Bank = 1,
         PensionFund,
-        MerchantBank
     }
 }
