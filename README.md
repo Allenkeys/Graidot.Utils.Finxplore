@@ -17,7 +17,7 @@
 
   - To install our package using the .NET CLI: 
   ```C#
-  dotnet add package NigeriaFinance --version 1.0.0
+  dotnet add package NigeriaFinance --version 1.0.1
   ```
   - Installation using Visual Studio
     - Right-click on project dependencies
@@ -27,7 +27,7 @@
 
   - Installation using .NET Package Manager Console
   ```C#
-    PM> Install-Package NigeriaFinance -Version 1.0.0
+    PM> Install-Package NigeriaFinance -Version 1.0.1
   ```
   - Finally, import into file
   ```C#
@@ -81,6 +81,12 @@ await NgFinance.GetInstituteAsync(typeId, instituteId);
 - GitHub: [@Allenkeys](https://github.com/Allenkeys)
 - Twitter: [@jdgraay](https://twitter.com/jdgraay)
 - LinkedIn: [Eze Joshua](https://linkedin.com/in/eze-joshua-chinemogo)
+
+👤 **Ugochukwu Udeh**
+
+- GitHub: [@sixxxxxxxxxxx](https://github.com/sixxxxxxxxxxx)
+- Twitter: [@justugochukwu](https://twitter.com/JustUgochukwu)
+- LinkedIn: [Ugochukwu Udeh](https://www.linkedin.com/in/ugochukwuudeh)
 
 
 ## 🤝 Contributing
