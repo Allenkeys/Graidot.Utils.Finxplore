@@ -15,10 +15,10 @@ namespace NigeriaFinance
         }
 
         /// <summary>
-        /// Gets a financial institution. Note: The financial institutions depend on the type passed as parameter 
+        /// Gets a financial institution. 
+        /// Note: The financial institutions depend on the type parameter. 
         /// </summary>
-        /// 
-        /// <param name="typeId"><see cref="InstituteType"/>The type of financial institution from NigeriaFinance.Enums.InstituteType</param>
+        /// <param name="typeId"> <see cref="InstituteType"/> The type of financial institution</param>
         /// <param name="instituteId"><see cref="int"/> The institution ID</param>
         /// <returns> <see cref="InstituteResponse"/> a financial institution</returns>
         public static async Task<InstituteResponse> GetInstituteAsync(InstituteType typeId, int instituteId)
@@ -28,9 +28,9 @@ namespace NigeriaFinance
 
         /// <summary>
         /// Gets a collection of financial institutions. 
-        /// Note: These financial institutions depend on the type passed as parameter 
+        /// Note: These financial institutions depend on the type parameter.
         /// </summary>
-        /// <param name="typeId"><see cref="InstituteType"/> The type of financial institution.</param>
+        /// <param name="typeId"> <see cref="InstituteType"/> The type of financial institution.</param>
         /// <returns>An <see cref="IEnumerable{T}"/> of <see cref="InstituteResponse"/> of financial institutions</returns>
         public static async Task<IEnumerable<InstituteResponse>> GetInstitutesAsync(InstituteType typeId)
         {
