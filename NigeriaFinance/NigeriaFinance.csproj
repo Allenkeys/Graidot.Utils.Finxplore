@@ -1,21 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
     <Title>NigeriaFinance</Title>
-    <Authors>Allenkeys</Authors>
-    <Company>Tenece Professional Services</Company>
+    <Authors>Allenkeys,sixx</Authors>
+    <Company></Company>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/Allenkeys/NigeriaFinance</RepositoryUrl>
     <PackageTags>fintech;banks;pension-funds;fintech-utility</PackageTags>
     <Description>NuGet package tailored for fetching banks and pension fund data, prioritizing secure externalization and data access. Emphasizing best practices for app development, ensuring streamlined retrieval and usage of non-sensitive financial data.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <PackageReleaseNotes>Introducing our latest NuGet package! Seamlessly retrieve banks and pension fund data without storing any sensitive information in your database. This package prioritizes secure, external access, aligning with best practices for robust app development. Experience streamlined integration and effortless data retrieval for non-sensitive financial information, ensuring optimal security and efficiency for your applications.</PackageReleaseNotes>
+    <PackageReleaseNotes>Introducing the unification of diverse banking institutions, offering comprehensive results in one call. Integrated comprehensive documentation support for enhanced API accessibility and development experience.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/Allenkeys/NigeriaFinance</PackageProjectUrl>
     <PackageIcon>Icon.png</PackageIcon>
-    <Copyright>Copyright (c) 2023 Tenece Professional Services</Copyright>
+    <Copyright>Copyright (c) 2023 NigeriaFinance</Copyright>
     <Version>1.0.1</Version>
+    <TargetFrameworks>.NET Standard 2.0;.NET 5.0;.NET 6.0;.NET 7.0</TargetFrameworks>
+    <PackageLicenseExpression></PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
