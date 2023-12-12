@@ -15,8 +15,7 @@
     <PackageIcon>Icon.png</PackageIcon>
     <Copyright>Copyright (c) 2023 NigeriaFinance</Copyright>
     <Version>1.0.1</Version>
-    <TargetFrameworks>.NET Standard 2.0;.NET 5.0;.NET 6.0;.NET 7.0</TargetFrameworks>
-    <PackageLicenseExpression></PackageLicenseExpression>
+	  <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
